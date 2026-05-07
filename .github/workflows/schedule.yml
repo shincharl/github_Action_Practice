@@ -1,0 +1,12 @@
+name: Schedule
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+      timezone: 'Asia/Seoul'
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: date
